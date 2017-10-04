@@ -1,2 +1,2 @@
-# igauch.github.io
-igauch's personal website
+# [igauch.cn](igauch.cn)
+my personal website
