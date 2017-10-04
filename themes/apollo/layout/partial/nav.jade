@@ -1,0 +1,11 @@
+ul.nav.nav-list
+    each value, key in theme.menu
+        li.nav-list-item
+            - var re = /^(http|https):\/\/*/gi;
+            - var tar = re.test(value) ? "_blank" : "_self"
+            - var act = !re.test(value) && "/"+page.current_url === value
+            - var gauchact = page.path.match(/.*?(?=[\/]+)/)
+            //    just解決about不高亮问题
+            //    todo 高亮逻辑修正和完善
+            a.nav-list-link(class={active: act || (gauchact && '/'+ gauchact[0] + '/' === value)} href=url_for(value) target=tar)
+                != __(key.toUpperCase())
