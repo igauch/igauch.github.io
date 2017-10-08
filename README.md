@@ -1,2 +1,2 @@
-# [igauch.cn](igauch.cn)
+# [igauch.cn](http://igauch.cn)
 my personal website
