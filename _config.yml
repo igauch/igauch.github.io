@@ -91,3 +91,12 @@ deploy:
   repo: https://gitee.com/igauch/igauch.git
   name: igauch
   email: igauch@qq.com
+
+markdown:
+  plugins:
+    - markdown-it-abbr
+    - markdown-it-footnote
+    - markdown-it-ins
+    - markdown-it-sub
+    - markdown-it-sup
+    - markdown-it-emoji
